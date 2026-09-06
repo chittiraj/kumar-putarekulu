@@ -30,7 +30,7 @@ function ShoppingAssistant() {
 
     const handleWhatsApp = () => {
 
-        const phoneNumber = "917993669326";
+        const phoneNumber = "919573128496";
 
         const message =
             "Hello Kumar Neti Putarekulu, I would like to know more about your sweets.";

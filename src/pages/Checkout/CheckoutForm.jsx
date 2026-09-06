@@ -112,7 +112,7 @@ function CheckoutForm() {
 
         /* ================= WhatsApp ================= */
 
-        const phoneNumber = "917993669326";
+        const phoneNumber = "919573128496";
 
         const message = generateWhatsAppMessage(orderData);
 
