@@ -233,7 +233,7 @@ function BulkOrder() {
                             <Mail size={20} />
 
                             <span>
-                                kumarneethiputharekuki@gmail.com
+                                kumarneethiputharekulu@gmail.com
                             </span>
 
                         </div>

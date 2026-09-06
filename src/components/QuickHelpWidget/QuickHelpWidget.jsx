@@ -125,7 +125,7 @@ function QuickHelpWidget() {
 
                                     <div className="info-item">
                                         <Mail size={18}/>
-                                        kumarsweets@gmail.com
+                                        kumarneethiputharekulu@gmail.com
                                     </div>
 
                                     <div className="info-item">

@@ -139,7 +139,7 @@ function BulkOrderForm() {
 
         /* ================= WhatsApp URL ================= */
 
-        const phoneNumber = "917993669326";
+        const phoneNumber = "919573128496";
 
         const whatsappUrl =
             `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

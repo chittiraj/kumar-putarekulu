@@ -71,7 +71,7 @@ function Footer() {
 
                         <li>
                             <Mail size={18} />
-                            kumarneethiputharekuki@gmail.com
+                            kumarneethiputharekulu@gmail.com
                         </li>
 
                         <li>

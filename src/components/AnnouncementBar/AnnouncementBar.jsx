@@ -85,7 +85,7 @@ function AnnouncementBar() {
                 <Mail size={16} />
 
                 <span>
-                    kumarneethiputharekuki@gmail.com
+                    kumarneethiputharekulu@gmail.com
                 </span>
 
             </div>
