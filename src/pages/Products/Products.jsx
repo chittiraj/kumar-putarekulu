@@ -25,10 +25,12 @@ import plainBellam from "../../assets/sweetsPhotos/Plain bellam putharekulu.jpeg
 import bellamBadam from "../../assets/sweetsPhotos/Bellam badam and kaju putharekulu.jpeg";
 import bellamDryFruit from "../../assets/sweetsPhotos/Special bellam dryfruits putharekulu.jpeg";
 import halfLeaf from "../../assets/sweetsPhotos/Half leaf bellam dryfruits putharekulu.jpeg";
+import halfLeafsugar from "../../assets/sweetsPhotos/half leaf sugar.jpeg";
 
 import fullLeaf from "../../assets/sweetsPhotos/Full leaf bellam dryfruits putharekulu.jpeg";
+import fullLeafsugar from "../../assets/sweetsPhotos/full leaf sugar.jpeg";
 import sugarFree from "../../assets/sweetsPhotos/Sugarfree dryfruits putharekulu.jpeg";
-
+import sugarDry from "../../assets/sweetsPhotos/sugar dryfurit.jpeg";
 import karapadiDryFruit from "../../assets/sweetsPhotos/Karapodi dryfruits putharekulu.jpeg";
 import Kova from "../../assets/sweetsPhotos/Kova dryfruits putharekulu.jpeg";
 
@@ -36,9 +38,6 @@ import chocolateDryFruit from "../../assets/sweetsPhotos/Chocolate dryfruits put
 import oreo from "../../assets/sweetsPhotos/Oreo dryfruits putharekulu.jpeg";
 import honey from "../../assets/sweetsPhotos/Honey dryfruits putharekulu.jpeg";
 import dates from "../../assets/sweetsPhotos/Dates dryfruits putharekulu.jpeg";
-import sweet2 from "../../assets/images/sweetsPhotos/Bellam_Pootharekulu_1.webp";
-import sweet3 from "../../assets/images/sweetsPhotos/Bellam_Pootharekulu_1.webp";
-import sweet4 from "../../assets/images/sweetsPhotos/Bellam_Pootharekulu_1.webp";
 import sweet5 from "../../assets/images/sweetsPhotos/Bellam_Pootharekulu_1.webp";
 
 import horlicks from "../../assets/images/sweetsPhotos/pootharekulu/horlicks-pootharekulu.jpeg";
@@ -172,7 +171,7 @@ function Products() {
             id: 6,
             category: "putarekulu",
             badge: "PREMIUM",
-            image: bellamDryFruit,
+            image: sugarDry,
             name: "Sugar Dry Fruits Putarekulu",
             price: 180,
             weights: ["Box"]
@@ -192,7 +191,7 @@ function Products() {
             id: 8,
             category: "putarekulu",
             badge: "SPECIAL",
-            image: bellamDryFruit,
+            image: sugarDry,
             name: "Special Sugar Dry Fruits Putarekulu",
             price: 250,
             weights: ["Box"]
@@ -211,7 +210,7 @@ function Products() {
             id: 10,
             category: "putarekulu",
             badge: "BESTSELLER",
-            image: halfLeaf,
+            image: halfLeafsugar,
             name: "Half Leaf Sugar Dry Fruits Putarekulu",
             price: 350,
             weights: ["Box"]
@@ -231,7 +230,7 @@ function Products() {
             id: 12,
             category: "putarekulu",
             badge: "PREMIUM",
-            image: fullLeaf,
+            image: fullLeafsugar,
             name: "Full Leaf Sugar Dry Fruits Putarekulu",
             price: 500,
             weights: ["Box"]
