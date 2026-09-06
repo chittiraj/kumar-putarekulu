@@ -1,0 +1,18 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+}
+
+.main-content {
+    padding-top: 110px; /* Adjust based on your header height */
+}
+
+@media (max-width:768px){
+    .main-content{
+        padding-top: 100px;
+    }
+}

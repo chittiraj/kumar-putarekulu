@@ -1,0 +1,712 @@
+.navbar {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ececec;
+    
+}
+
+/* Container */
+.navbar-container {
+    max-width: 1320px;      /* Change to 1200px if you want */
+    width: 100%;
+    height: 80px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+/* Left */
+.navbar-left {
+    flex: 1;
+}
+
+.logo {
+    height: 90px;
+    cursor: pointer;
+}
+
+/* Center */
+.navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4A2C2A;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #8B4513;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #8B4513;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Right */
+.navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+    color: #4A2C2A;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+    background: #8B4513;
+    color: #fff;
+
+    font-size: 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================
+            Responsive Navbar
+========================================== */
+
+/* Desktop */
+
+.desktop-navbar{
+
+    display:block;
+
+}
+
+.mobile-navbar{
+
+    display:none;
+
+}
+
+.mobile-overlay{
+
+    display:none;
+
+}
+
+.mobile-drawer{
+
+    display:none;
+
+}
+
+
+/* ==========================================
+            Mobile Navbar
+========================================== */
+
+/* ==========================================
+            Mobile Navbar
+========================================== */
+
+/* ==========================================
+            Mobile Navbar
+========================================== */
+
+@media (max-width:768px){
+
+    /* Hide Desktop */
+
+    .desktop-navbar{
+
+        display:none;
+
+    }
+
+    .mobile-navbar{
+
+        display:block;
+
+        width:100%;
+
+        background:#FFF;
+
+        border-bottom:1px solid #ECECEC;
+
+        position:sticky;
+
+        top:0;
+
+        z-index:999;
+
+    }
+
+    /* ==========================================
+                Top Navbar
+    ========================================== */
+
+    .mobile-navbar-container{
+
+        height:70px;
+
+        padding:0 18px;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:space-between;
+
+        position:relative;
+
+    }
+
+    .mobile-menu-btn{
+
+        width:42px;
+
+        height:42px;
+
+        border:none;
+
+        background:none;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        color:#3D251E;
+
+        cursor:pointer;
+
+        transition:.3s;
+
+        border-radius:50%;
+
+    }
+
+    .mobile-menu-btn:hover{
+
+        background:#FFF5EA;
+
+        color:#B67C45;
+
+    }
+
+    .mobile-logo-link{
+
+        position:absolute;
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+    }
+
+    .mobile-logo{
+
+        height:68px;
+
+        width:auto;
+
+    }
+
+    .mobile-cart{
+
+        position:relative;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        color:#3D251E;
+
+        cursor:pointer;
+
+    }
+
+    .mobile-cart:hover{
+
+        color:#B67C45;
+
+    }
+
+    .mobile-cart .cart-count{
+
+        top:-8px;
+
+        right:-10px;
+
+    }
+
+    /* ==========================================
+                Overlay
+    ========================================== */
+
+    .mobile-overlay{
+
+        display:block;
+
+        position:fixed;
+
+        inset:0;
+
+        background:rgba(0,0,0,.45);
+
+        opacity:0;
+
+        visibility:hidden;
+
+        transition:.35s;
+
+        z-index:9998;
+
+    }
+
+    .mobile-overlay.show{
+
+        opacity:1;
+
+        visibility:visible;
+
+    }
+
+    /* ==========================================
+                Drawer
+    ========================================== */
+
+    .mobile-drawer{
+
+        display:flex;
+
+        flex-direction:column;
+
+        position:fixed;
+
+        top:0;
+
+        left:-320px;
+
+        width:300px;
+
+        max-width:82%;
+
+        height:100vh;
+
+        background:#FFF;
+
+        transition:.35s;
+
+        box-shadow:8px 0 35px rgba(0,0,0,.18);
+
+        z-index:9999;
+
+        overflow-y:auto;
+
+    }
+
+    .mobile-drawer.open{
+
+        left:0;
+
+    }
+
+    /* ==========================================
+                Header
+    ========================================== */
+
+    .mobile-drawer-header{
+
+        position:relative;
+
+        text-align:center;
+
+        padding:24px 22px;
+
+    }
+
+    .close-drawer{
+
+        position:absolute;
+
+        right:16px;
+
+        top:16px;
+
+        width:38px;
+
+        height:38px;
+
+        border:none;
+
+        border-radius:50%;
+
+        background:#FFF6ED;
+
+        color:#3D251E;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        cursor:pointer;
+
+        transition:.3s;
+
+    }
+
+    .close-drawer:hover{
+
+        background:#B67C45;
+
+        color:#FFF;
+
+        transform:rotate(90deg);
+
+    }
+
+    .drawer-logo{
+
+        width:78px;
+
+        margin:0 auto 16px;
+
+        display:block;
+
+    }
+
+    .drawer-title{
+
+        margin:0;
+
+        font-size:22px;
+
+        font-weight:700;
+
+        color:#3D251E;
+
+    }
+
+    .drawer-subtitle{
+
+        margin-top:8px;
+
+        color:#A26B35;
+
+        font-size:13px;
+
+        line-height:1.7;
+
+    }
+
+    .mobile-divider{
+
+        width:88%;
+
+        height:1px;
+
+        margin:0 auto;
+
+        background:#ECE2D6;
+
+    }
+        /* ==========================================
+                Navigation
+    ========================================== */
+
+    .mobile-nav-link{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:space-between;
+
+        padding:18px 22px;
+
+        text-decoration:none;
+
+        color:#3D251E;
+
+        font-size:16px;
+
+        font-weight:500;
+
+        border-bottom:1px solid #F4ECE4;
+
+        transition:.3s ease;
+
+    }
+
+    .mobile-nav-link:last-of-type{
+
+        border-bottom:none;
+
+    }
+
+    .mobile-nav-left{
+
+        display:flex;
+
+        align-items:center;
+
+        gap:14px;
+
+    }
+
+    .mobile-nav-left svg{
+
+        width:18px;
+
+        height:18px;
+
+        color:#8B4513;
+
+        transition:.3s ease;
+
+        flex-shrink:0;
+
+    }
+
+    .mobile-nav-link span{
+
+        color:#3D251E;
+
+        transition:.3s ease;
+
+    }
+
+    .mobile-nav-link>svg{
+
+        width:18px;
+
+        height:18px;
+
+        color:#B67C45;
+
+        transition:.3s ease;
+
+    }
+
+    /* ==========================================
+                Hover
+    ========================================== */
+
+    .mobile-nav-link:hover{
+
+        background:#FFF8F0;
+
+        color:#8B4513;
+
+        padding-left:28px;
+
+    }
+
+    .mobile-nav-link:hover .mobile-nav-left svg{
+
+        transform:scale(1.12);
+
+    }
+
+    .mobile-nav-link:hover>svg{
+
+        transform:translateX(4px);
+
+    }
+
+    /* ==========================================
+                Active
+    ========================================== */
+
+    .mobile-nav-link.active{
+
+        background:#FFF8F0;
+
+        color:#8B4513;
+
+        font-weight:600;
+
+        border-left:4px solid #B67C45;
+
+        padding-left:18px;
+
+    }
+
+    .mobile-nav-link.active .mobile-nav-left svg{
+
+        color:#B67C45;
+
+    }
+
+    .mobile-nav-link.active>svg{
+
+        color:#B67C45;
+
+    }
+
+    /* ==========================================
+                Spacer
+    ========================================== */
+
+    .drawer-spacer{
+
+        flex:1;
+
+        min-height:30px;
+
+    }
+        /* ==========================================
+                Drawer Footer
+    ========================================== */
+
+    .drawer-footer{
+
+        text-align:center;
+
+        padding:24px 20px 30px;
+
+    }
+
+    .drawer-year{
+
+        margin:0;
+
+        font-size:14px;
+
+        font-weight:700;
+
+        color:#8B4513;
+
+        letter-spacing:1px;
+
+        text-transform:uppercase;
+
+    }
+
+    .drawer-bottom-text{
+
+        margin-top:8px;
+
+        font-size:13px;
+
+        color:#777;
+
+        line-height:1.6;
+
+    }
+
+    /* ==========================================
+                Scrollbar
+    ========================================== */
+
+    .mobile-drawer::-webkit-scrollbar{
+
+        width:5px;
+
+    }
+
+    .mobile-drawer::-webkit-scrollbar-track{
+
+        background:#F8F8F8;
+
+    }
+
+    .mobile-drawer::-webkit-scrollbar-thumb{
+
+        background:#D8C3AF;
+
+        border-radius:20px;
+
+    }
+
+    .mobile-drawer::-webkit-scrollbar-thumb:hover{
+
+        background:#B67C45;
+
+    }
+
+    /* Firefox */
+
+    .mobile-drawer{
+
+        scrollbar-width:thin;
+
+        scrollbar-color:#D8C3AF #F8F8F8;
+
+    }
+
+    /* ==========================================
+                Touch Friendly
+    ========================================== */
+
+    .mobile-menu-btn,
+    .mobile-cart,
+    .close-drawer,
+    .mobile-nav-link{
+
+        -webkit-tap-highlight-color:transparent;
+
+        user-select:none;
+
+    }
+
+    .mobile-menu-btn:focus,
+    .mobile-cart:focus,
+    .close-drawer:focus,
+    .mobile-nav-link:focus{
+
+        outline:none;
+
+    }
+
+    /* ==========================================
+                Smooth Animation
+    ========================================== */
+
+    .mobile-menu-btn,
+    .mobile-cart,
+    .close-drawer,
+    .mobile-nav-link,
+    .mobile-nav-left svg,
+    .mobile-nav-link > svg{
+
+        transition:all .3s ease;
+
+    }
+
+}

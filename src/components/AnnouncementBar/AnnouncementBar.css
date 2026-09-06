@@ -1,0 +1,134 @@
+.announcement-bar {
+    background-color: #FEEAC9;
+    color: black;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    
+}
+
+.ticker-section {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticker-section marquee {
+    color: #4A2C2A;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.highlight {
+    color: #8B4513;
+    font-weight: 600;
+}
+
+.email-section {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 18px;
+    white-space: nowrap;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    white-space: nowrap;
+    border-left: 1px solid #555;
+    text-decoration:none;
+    color: black;
+}
+
+.contact-section:hover{
+
+
+    color:#B67C45;
+
+
+}
+
+/* ==========================================
+        Mobile Only
+========================================== */
+
+@media (max-width:768px){
+
+    /* Hide Email */
+
+    .email-section{
+
+        display:none;
+
+    }
+
+    /* Give space for Contact */
+
+    .ticker-section{
+
+        width:calc(100% - 90px);
+
+        flex:none;
+
+        overflow:hidden;
+
+    }
+
+    .ticker-section marquee{
+
+        font-size:11px;
+
+    }
+
+    /* Contact */
+
+    .contact-section{
+
+        width:80px;
+
+        flex-shrink:0;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:flex-end;
+
+        padding:0;
+
+        border-left:none;
+
+        font-size:12px;
+
+        font-weight:600;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .ticker-section{
+
+        width:calc(100% - 72px);
+
+    }
+
+    .ticker-section marquee{
+
+        font-size:10px;
+
+    }
+
+    .contact-section{
+
+        width:70px;
+
+        font-size:11px;
+
+    }
+
+}
