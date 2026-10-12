@@ -1,5 +1,5 @@
 import "./FounderSection.css";
-import founderImage from "../../assets/images/people/founderPhoto.jpeg";
+import founderImage from "../../assets/founder.jpeg";
 
 function FounderSection() {
     return (
@@ -23,7 +23,7 @@ function FounderSection() {
                     </span>
 
                     <h2>
-                        Chitti Raja Achari Kottapalli
+                        Adapa Rakshana anand kumar
                     </h2>
 
                     <p>
