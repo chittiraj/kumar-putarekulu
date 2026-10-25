@@ -152,7 +152,7 @@ function Products() {
             category: "putarekulu",
             badge: "POPULAR",
             image: sweet1,
-            name: "Sugar Kaju Putarekulu",
+            name: "Sugar badam & Kaju Putarekulu",
             price: 140,
             weights: ["Box"]
         },
