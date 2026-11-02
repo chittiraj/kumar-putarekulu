@@ -26,7 +26,8 @@ import bellamBadam from "../../assets/sweetsPhotos/Bellam badam and kaju puthare
 import bellamDryFruit from "../../assets/sweetsPhotos/Special bellam dryfruits putharekulu.jpeg";
 import halfLeaf from "../../assets/sweetsPhotos/Half leaf bellam dryfruits putharekulu.jpeg";
 import halfLeafsugar from "../../assets/sweetsPhotos/half leaf sugar.jpeg";
-
+import balam180 from "../../assets/sweetsPhotos/180-balamm.jpeg";
+import suager180 from "../../assets/sweetsPhotos/180-sugar.jpeg";
 import fullLeaf from "../../assets/sweetsPhotos/Full leaf bellam dryfruits putharekulu.jpeg";
 import fullLeafsugar from "../../assets/sweetsPhotos/full leaf sugar.jpeg";
 import sugarFree from "../../assets/sweetsPhotos/Sugarfree dryfruits putharekulu.jpeg";
@@ -161,7 +162,7 @@ function Products() {
             id: 5,
             category: "putarekulu",
             badge: "PREMIUM",
-            image: bellamDryFruit,
+            image: balam180,
             name: "Bellam Dry Fruits Putarekulu",
             price: 180,
             weights: ["Box"]
@@ -171,7 +172,7 @@ function Products() {
             id: 6,
             category: "putarekulu",
             badge: "PREMIUM",
-            image: sugarDry,
+            image: suager180,
             name: "Sugar Dry Fruits Putarekulu",
             price: 180,
             weights: ["Box"]
